@@ -343,7 +343,7 @@ local function createRow(g, isLatest)
 	local display = visible or g.Name
 
 	-- Search filter
-	if currentSearch \~= "" then
+	if currentSearch ~= "" then
 		local lower = string.lower(display .. " " .. g.Name)
 		if not string.find(lower, string.lower(currentSearch), 1, true) then
 			return
